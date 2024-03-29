@@ -1,5 +1,4 @@
 .gitignore
 requirements.txt
-allure_tdd_reports/
 allure_bdd_reports/
 
