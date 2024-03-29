@@ -21,9 +21,9 @@ def clck_lgn_btn(context):
     """
     context.app.main_page.clck_lgn_btn()
 
-@then('Assert user is logged in')
-def assrt_usr_is_lggd_in(context):
+@then('Assert user is logged in. Expected "{expected_word_here}" is here')
+def assrt_usr_is_lggd_in(context, expected_word_here):
     """
-    Assert user is logged in
+    Assert user is logged in. Expected "Viachesla..." is here
     """
-    context.app.main_page.assrt_usr_is_lggd_in()
+    context.app.main_page.assrt_usr_is_lggd_in(expected_word_here)

@@ -72,8 +72,8 @@ class MainPage(Page):
         wait.until(EC.element_to_be_clickable(LGN_BTN)).click()
 
     # 5 Assert user is logged in
-    def assrt_usr_is_lggd_in(self):
+    def assrt_usr_is_lggd_in(self, expected_word_here):
         registered_user_logged_logo = self.driver.find_element(*REGISTERED_USR_LOGGED_LOGO)
-        expected_text = 'Viachesla...'
+        expected_text = expected_word_here
         actual_text = registered_user_logged_logo.text
         assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'

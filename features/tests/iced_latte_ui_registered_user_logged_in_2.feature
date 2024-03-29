@@ -7,4 +7,4 @@ Feature: # iced_latte_ui_registered_user_logged_in_2
     Then Send registered email to email field
     Then Send valid password to password field
     Then Click login button
-    Then Assert user is logged in
+    Then Assert user is logged in. Expected "Viachesla..." is here
