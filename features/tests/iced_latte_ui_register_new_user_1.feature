@@ -1,4 +1,4 @@
-# Created by rapid at 28 march 2024
+# # Created by rapid at 3/28/2024
 Feature: # iced_latte_ui_register_new_user_1
 
   Scenario: # iced_latte_ui_register_new_user_1

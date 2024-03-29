@@ -51,3 +51,29 @@ class MainPage(Page):
         wait.until(EC.element_to_be_clickable(REGISTER_USER_BTN)).click()
 
     # End of the above code
+
+    # iced_latte_ui_registered_user_logged_in_2
+    # 1 Click user authorization icon
+    # 2 Send registered email to email field
+    def snd_rgstrd_eml_to_eml_fld(self):
+        email_field = self.driver.find_element(*EML_FLD)
+        email_field.clear()
+        email_field.send_keys(email_valid)
+
+    # 3 Send valid password to password field
+    def snd_vald_pswrd_to_pswrd_fld(self):
+        passwrd_field = self.driver.find_element(*PSWRD_FLD)
+        passwrd_field.clear()
+        passwrd_field.send_keys(password_valid)
+
+    # 4 Click login button
+    def clck_lgn_btn(self):
+        wait = WebDriverWait(self.driver, 10)
+        wait.until(EC.element_to_be_clickable(LGN_BTN)).click()
+
+    # 5 Assert user is logged in
+    def assrt_usr_is_lggd_in(self):
+        registered_user_logged_logo = self.driver.find_element(*REGISTERED_USR_LOGGED_LOGO)
+        expected_text = 'Viachesla...'
+        actual_text = registered_user_logged_logo.text
+        assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'
