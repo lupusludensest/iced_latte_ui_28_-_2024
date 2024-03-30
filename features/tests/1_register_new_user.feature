@@ -1,7 +1,7 @@
 # # Created by rapid at 3/28/2024
-Feature: # iced_latte_ui_register_new_user_1
+Feature: # 1_register_new_user
 
-  Scenario: # iced_latte_ui_register_new_user_1
+  Scenario: # 1_register_new_user
     Given Loginpage
     Then Click user authorization icon
     Then Click user registration button

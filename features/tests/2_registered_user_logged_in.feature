@@ -1,7 +1,7 @@
 # Created by rapid at 3/28/2024
-Feature: # iced_latte_ui_registered_user_logged_in_2
+Feature: # 2_registered_user_logged_in
 
-  Scenario: # iced_latte_ui_registered_user_logged_in_2
+  Scenario: # 2_registered_user_logged_in_2
     Given Loginpage
     Then Click user authorization icon
     Then Send registered email to email field
